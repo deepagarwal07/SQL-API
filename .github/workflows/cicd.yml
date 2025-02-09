@@ -38,7 +38,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - ⁠⁠name: Configure SSH Key
+      - name: Configure SSH Key
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.EC2_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
